@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gratis Spel Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🎮 Gratis Spel Portal</h1>
+    <p>Spela gratis spel via lagliga länkar</p>
+    <input type="text" id="searchInput" placeholder="Sök spel..." />
+  </header>
+
+  <main id="gamesGrid" class="games-grid">
+    <div class="game-card" data-name="cookie clicker">
+      <h2>🍪 Cookie Clicker</h2>
+      <p>Klicka på kakor och bygg ditt kak-imperium.</p>
+      <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">
+        Spela
+      </a>
+    </div>
+
+    <div class="game-card" data-name="ovo">
+      <h2>🏃 OvO</h2>
+      <p>Snabbt plattformsspel med hopp och parkour.</p>
+      <a href="https://dedra-games.itch.io/ovo" target="_blank">
+        Spela
+      </a>
+    </div>
+
+    <div class="game-card" data-name="space waves">
+      <h2>🚀 Space Waves</h2>
+      <p>Rymdspel med reflexer och fart.</p>
+      <a href="https://spacewaves.io/" target="_blank">
+        Spela
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Alla spel öppnas via externa lagliga länkar.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+}
+
+header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+#searchInput {
+  margin-top: 20px;
+  padding: 12px;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.game-card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.2s;
+}
+
+.game-card:hover {
+  transform: scale(1.04);
+}
+
+.game-card h2 {
+  font-size: 24px;
+}
+
+.game-card p {
+  color: #cbd5e1;
+}
+
+.game-card a {
+  display: inline-block;
+  margin-top: 15px;
+  background: #22c55e;
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.game-card a:hover {
+  background: #16a34a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: #94a3b8;
+}
